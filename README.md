@@ -1,5 +1,5 @@
 # UNet
-Segment salt deposits beneath the Earth's surface
+Segment salt deposits beneath the Earth's surface using seismic images.
 
 This project was done for the [TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)
 
