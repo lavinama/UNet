@@ -17,7 +17,7 @@ In normal object detection networks we are interested *what* are the objects so 
 
 What is transposed convolution?
 
-It is exactly the opposite of normal convolution, the input is a low resolution image and the output is a high resolution image. To see how it works I invite you to check out this [post](https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0)
+It is exactly the opposite of normal convolution, the input is a low resolution image and the output is a high resolution image. To see how it works I invite you to check out this [post](https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0).
 
 ### UNet Architecture
 
@@ -29,7 +29,7 @@ We are getting $128 \times 128 \times 3$ images.
 
 This is the architecture of the UNet:
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*yzbjioOqZDYbO6yHMVpXVQ.jpeg", width=400 />
+  <img src="https://github.com/lavinama/UNet/blob/main/media/unet_arch.jpeg", width=600 />
 </p>
 
 ### Training
@@ -47,19 +47,23 @@ You can download the dataset [here](https://www.kaggle.com/c/tgs-salt-identifica
 The trainining directory `train.zip` contains 4000 seismic images together with 4000 grayscale images denoting where the salt deposits are. For example:
 
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*vgHgTk0B2xK7TKKb5XzSdA.png", width=400 />
+  <img src="https://github.com/lavinama/UNet/blob/main/media/preview_data.png", width=400 />
 </p>
 
 
 ### Results
 Results on the validation dataset:
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*RixdcYj3n1KfydHqUF8hzA.png", width=400 />
+  <img src="https://github.com/lavinama/UNet/blob/main/media/val1.png", width=400 /> </br>
+  <img src="https://github.com/lavinama/UNet/blob/main/media/val2.png", width=400 /> </br>
+  <img src="https://github.com/lavinama/UNet/blob/main/media/val3.png", width=400 /> </br>
+  <img src="https://github.com/lavinama/UNet/blob/main/media/val4.png", width=400 /> </br>
+  <img src="https://github.com/lavinama/UNet/blob/main/media/val5.png", width=400 /> </br>
 </p>
 
 The lowest validation loss that I got was 0.18702.
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*RixdcYj3n1KfydHqUF8hzA.png", width=400 />
+  <img src="https://github.com/lavinama/UNet/blob/main/media/loss_curves.png", width=400 />
 </p>
 
 The results on the training dataset are better than those on the validation dataset -> model is overfitting.
