@@ -32,6 +32,17 @@ This is the architecture of the UNet:
   <img src="https://github.com/lavinama/UNet/blob/main/media/unet_arch.jpeg", width=600 />
 </p>
 
+Advantages:
+* The network is image size agnostic since it does not contain fully connected layers, this means that the model is of smaller weight size.
+* Can be easily scaled ot multiple classes.
+* Works well with small datasets, thanks to the robustness provided with data augmentation
+
+Disadvantages:
+* The size of the UNet should be similar to the size of the features (need context of the images).
+* High number of layers means that it takes time to train.
+
+There are other methods for semantic segmentation such as: FCN-VGG16, DeepLab, Deconvnet, U-Net, DialatedNet, GCN, PSPNet, FC-DenseNet103, EncNet, Gated-SCNN. For more information visit this [link](https://arxiv.org/pdf/2001.04074.pdf).
+
 ### Training
 
 Optimisation techniques and Hyperparameters:
