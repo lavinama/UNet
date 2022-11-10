@@ -3,11 +3,14 @@ Segment salt deposits beneath the Earth's surface
 
 This project was done for the [TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge)
 
-1. [Background](###Background)
-2. [Background](###Background)
-3. [Results](###Results)
+### Table of Contents
+1. [Background](#background)
+2. [UNet Architecture](#unet-architecture)
+3. [Training](#training)
+4. [Dataset](#dataset)
+5. [Results](#results)
 
-<a name="Background"></a>
+
 ### Background
 
 In normal object detection networks we are interested *what* are the objects so we often use max pooling to reduce the size of the feature map. But with semantic segmentation we are also interested in ther *where* of the objects, so we use up sampling methods, such as transposed convolution.
@@ -47,7 +50,7 @@ The trainining directory `train.zip` contains 4000 seismic images together with 
   <img src="https://miro.medium.com/max/1400/1*vgHgTk0B2xK7TKKb5XzSdA.png", width=400 />
 </p>
 
-<a name="Results"></a>
+
 ### Results
 Results on the validation dataset:
 <p align="center">
